@@ -235,6 +235,9 @@ def paint_kitten(cv):
     cv.poly([(470, 318), (486, 282), (500, 316)], FUR[0], FUR[1], FUR[2])
     cv.poly([(500, 316), (516, 280), (530, 318)], FUR[0], FUR[1], FUR[2])
     cv.poly([(528, 318), (544, 284), (556, 320)], FUR[0], FUR[1], FUR[2])
+    # A tiny pink heart on the forehead, like a birthmark.
+    cv.heart(512, 420, 16, PINK_DEEP[0], PINK_DEEP[1], PINK_DEEP[2], 0.95)
+    cv.heart(512, 420, 9, PINK[0], PINK[1], PINK[2], 0.9)
     # Blush cheeks (soft, under the eyes).
     cv.ellipse(330, 652, 46, 28, PINK[0], PINK[1], PINK[2], 0.55)
     cv.ellipse(694, 652, 46, 28, PINK[0], PINK[1], PINK[2], 0.55)
